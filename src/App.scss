@@ -1,0 +1,80 @@
+@font-face {
+  font-family: 'AdventureRequest';
+  src: url('./assets/AdventureRequest-j8W9.ttf') format('truetype');
+}
+
+.app {
+  min-height: 100vh;
+  max-height: 100vh;
+  height: 100vh;
+  background-color: #111111;
+  color: #EBEFF1;
+  padding: 24px;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  .terminal-view {
+    width: 100%;
+    height: 100%;
+    border: double #53C2C5;
+    box-sizing: border-box;
+    padding: 2px 6px 0 6px;
+    overflow: auto;
+
+
+    p, pre {
+      margin: 0 0 1px 0;
+    }
+
+    .input-line-holder {
+      display: flex;
+
+      .input-line {
+        flex: 1;
+        margin-left: 8px;
+        color: #EBEFF1;
+        background-color: transparent;
+        border: none;
+        font-size: 16px;
+        caret-color: #53C2C5;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    .bottom-scroll {
+      height: 200px;
+      width: 100%;
+    }
+  }
+
+  &.default {
+    font-family: courier;
+
+    .terminal-view {
+      background-color: #21211D;
+
+      .input-line-holder .input-line {
+        font-family: courier;
+      }
+    }
+  }
+
+  &.retro-gaming {
+    background-image: url("./assets/retro.jpeg");
+    background-size: cover;
+    font-family: 'AdventureRequest';
+    letter-spacing: 1px;
+
+    .terminal-view {
+      background: rgba(0, 0, 0, 0.94);
+
+      .input-line-holder .input-line {
+        font-family: 'AdventureRequest';
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
