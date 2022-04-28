@@ -6,6 +6,8 @@ The exercise resolved in this project simulates a unix-like terminal in the brow
 
 Credits: Sebastián Gamboa (https://www.linkedin.com/in/sebastiangc/)
 
+Check running app at https://gcsebas99.github.io/rpn-ex/
+
 ## Initial analisys and investigation
 The following questions and topics were analized previously in order to resolve the exercise:
 
@@ -128,24 +130,25 @@ Available tests prove simple scenarios:
 
 ## User manual
 To execute the exercise visit the following link:
-[LINT TO APP]
+
+https://gcsebas99.github.io/rpn-ex/
 
 Then you can follow instructions to execute "rpn program" or "skin program"
 
 Available commands in terminal:
 
-1. ? - show help
-2. clear - reset terminal
-3. ls - show available programs
-4. ./PROGRAM - execute program
+1. `?` - show help
+2. `clear` - reset terminal
+3. `ls` - show available programs
+4. `./PROGRAM` - execute program
 
 When you are running "rpn" you can also type
 
-1. reset - set calculator back to 0 (empty calculator memory)
-2. exit - quit program
+1. `reset` - set calculator back to 0 (empty calculator memory)
+2. `exit` - quit program
 
 And when you are running "skin" the available options are
 
-1. 1 - select default skin
-2. 2 - select optional skin
-3. exit - quit program
+1. `1` - select default skin
+2. `2` - select optional skin
+3. `exit` - quit program
